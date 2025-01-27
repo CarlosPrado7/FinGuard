@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="pagPrincipal.css">
+    <link rel="icon" href="../assets/Logo.png" type="image/icon type">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="logo">
+            <img src="../assets/Logo.png" alt="Logo">
+        </div>
+        <div class="ayuda">
+            <button>¿Te ayudamos?</button>
+        </div>
+        <div class="iconos">
+            <img src="../assets/campana.png" alt="Campana">
+            <a href="../Inicio_Sesion/login.html"><img src="../assets/Usuario.png" alt="Usuario"></a>
+            <img src="../assets/ajuste.png" alt="Ajustes">
+        </div>        
+    </header>
+    <nav class="menu">
+        <a href="#" class="active">Inicio</a>
+        <a href="../gastos/gastos.html">Gastos</a>
+        <a href="../ingresos/ingresos.html">Ingresos</a>
+        <a href="../presupuestos/presupuesto.html">Presupuestos</a>
+        <a href="../balance/balance.html">Balance</a>
+    </nav>
+    <main class="principal">
+        <section class="saldo" >
+            <h2 id="saldoPagPrincipal">Saldo ahorrado:</h2>
+        </section>
+        <section class="finanzas">
+            <h3>Finanzas:</h3>
+            <div class="grafico">
+                <div class="numeros">
+                    <span>0,00</span>
+                    <span>0,00</span>
+                </div>
+                <div class="barra"></div>
+                <div class="etiquetas">
+                    <span>Ingresos</span>
+                    <span>Gastos</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="redes" id="redes">
+            <a href="https://www.whatsapp.com/?lang=es_LA"><img src="../assets/whatsap.png" alt="WhatsApp"></a>
+            <a href="https://www.instagram.com/"><img src="../assets/instagram.png" alt="Instagram"></a>
+            <a href="https://www.tiktok.com/@tiktok_es?lang=es"><img src="../assets/tiktok.png" alt="TikTok"></a>
+            <a href="https://workspace.google.com/intl/es/gmail/"><img src="../assets/email.png" alt="Email"></a>
+        </div>
+        <div id="politica" class="politica">
+            <img src="../assets/seguridad.png" alt="Seguridad">
+        </div>
+        <div class="privacidad" id="privacidad">
+            <p>© 2025 FinGuard</p>
+            <a href="#"><p>Políticas de privacidad</p></a>
+        </div>
+    </footer>
+
+    <script src="pagPrincipal.js"></script>
+    
+</body>
+</html>

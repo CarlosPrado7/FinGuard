@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto</title>
+    <link rel="stylesheet" href="presupuesto.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="header" class="header">
+        <img class="logo" src="../assets/presupuesto.png" alt="presupuesto">
+        <h1>Presupuesto</h1>
+        <a href="../presupuestos/presupuesto.html"><img class="exit" src="../assets/salida.png" alt="Salir"></a>
+    </section>
+    <section id="body" class="body">
+        <form id="presupuestoForm" class="formulario">
+            <div class="section datos">
+                <h2>Datos de la Empresa</h2>
+                <label for="empresa">Empresa:</label>
+                <input type="text" id="empresa" name="empresa" placeholder="Nombre de la Empresa" required>
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" placeholder="Dirección" required>
+                <label for="nif">NIF:</label>
+                <input type="text" id="nif" name="nif" placeholder="NIF" required>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Correo Electrónico" required>
+            </div>
+            <div class="section fechas">
+                <h2>Fechas</h2>
+                <label for="fechaPresupuesto">Fecha de presupuesto:</label>
+                <input type="date" id="fechaPresupuesto" name="fechaPresupuesto" required>
+                <label for="validez">Validez:</label>
+                <input type="number" id="validez" name="validez" placeholder="Días de validez" required>
+            </div>
+            <div class="section datosEspecificos">
+                <h2>Detalles</h2>
+                <div id="detalles">
+                    <div class="fila">
+                        <input type="text" name="descripcion[]" placeholder="Descripción" required>
+                        <input type="number" name="unidades[]" placeholder="Unidades" min="1" required>
+                        <input type="number" name="precio[]" placeholder="Precio" step="0.01" required>
+                        <input type="number" name="total[]" placeholder="Total" step="0.01" readonly>
+                    </div>
+                </div>
+                <button type="button" id="addRow">Añadir fila</button>
+            </div>
+            <div class="section precios">
+                <h2>Resumen</h2>
+                <label for="subTotal">Sub-Total:</label>
+                <input type="number" id="subTotal" name="subTotal" placeholder="Sub-Total" step="0.01" readonly>
+                <label for="descuento">Descuento:</label>
+                <input type="number" id="descuento" name="descuento" placeholder="Descuento" step="0.01">
+                <label for="iva">IVA (%):</label>
+                <input type="number" id="iva" name="iva" placeholder="IVA (%)" value="21" required>
+                <label for="totalPresupuesto">Total Presupuesto:</label>
+                <input type="number" id="totalPresupuesto" name="totalPresupuesto" placeholder="Total" step="0.01" readonly>
+            </div>
+            <button type="submit" class="btn">Guardar Presupuesto</button>
+        </form>
+    </section>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" href="../assets/Logo.png" type="image/icon type">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+</head>
+<body>
+    
+    <div id="principal" class="principal">
+        <img src="../assets/Logo.png">
+
+        <div id="titulo" class="titulo">
+            <h1 id="inicio"><em>Inicio Sesión</em></h1>
+            <p id="texto">Bienvenido a FinGuard</p>
+        </div>
+    
+        <div id="nombre" class="nombre">
+            <label for="nombre" id="labelNombre" class="labelNombre">Nombre:</label>
+            <input type="text" id="inputNombre" class="inputNombre" placeholder="Introduce tu nombre" required>
+        </div>
+
+        <div id="contrasenia" class="contrasenia">
+            <label for="contrasenia" id="labelContrasenia" class="labelContrasenia">Contraseña:</label>
+            <input type="password" id="inputContrasenia" class="inputContrasenia" placeholder="Introduce tu contraseña" required>
+        </div>
+
+        <div id="links" class="links">
+            <a href="../olvidarContrasenia/olvidarContra.html">¿Olvidaste tu contraseña?</a>
+            <br>
+            <a href="../registro/registro.html">Regístrate</a>
+        </div>
+
+        <div id="btnEntrar" class="btnEntrar">
+            <button type="submit" id="boton" class="boton"><a href="../mensaje/mensaje.html">Iniciar</a></button>
+        </div>
+    </div>
+
+</body>
+</html>

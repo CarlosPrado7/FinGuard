@@ -1,0 +1,139 @@
+/*Estilo general del login*/
+body {
+    background: #90EE90;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Roboto';
+}
+
+/*Contenedor principal*/
+#principal {
+    background: linear-gradient(#5dd55d, #7ff7ff);
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #000000;
+    padding: 30px 40px;
+    width: 550px;
+    height: 550px;
+    text-align: center;
+}
+
+/*Logo principal*/
+#principal img {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+#principal img:hover {
+    transform: scale(1.1);
+}
+
+/*Titulo y texto de bienvenida*/
+#titulo h1 {
+    font-size: 32px;
+    color: #000000;
+    margin: 0;
+}
+
+#titulo p {
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+/*Label del formulario y input*/
+.nombre {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.labelNombre {
+    font-size: 22px;
+    color: #000000;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.inputNombre {
+    padding: 10px 15px;
+    font-size: 18px;
+    color: #000000;
+    background-color: #7ff7ff;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    transition: all 0.3s esase;
+}
+
+.inputNombre:focus{
+    border-color: #000000;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    background-color: #7ff6ff8a;
+}
+
+/*label de contraseña y input*/
+.contrasenia {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.labelContrasenia {
+    font-size: 22px;
+    color: #000000;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.inputContrasenia {
+    padding: 10px 15px;
+    font-size: 18px;
+    color: #000000;
+    background-color: #7ff7ff;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    transition: all 0.3s esase;
+}
+
+.inputContrasenia:focus{
+    border-color: #000000;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    background-color: #7ff6ff8a;
+}
+
+/*links para las demas páginas*/
+#links a {
+    font-size: 18px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+#links a:hover {
+    text-decoration: underline;
+}
+
+/*boton para iniciar*/
+#btnEntrar .boton {
+    background-color: #007bff;
+    color: black;
+    padding: 10px 20px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#btnEntrar .boton a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+#btnEntrar .boton:hover {
+    background-color: #0057b35a;
+}

@@ -1,0 +1,260 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: aliceblue;
+    color: #000;
+}
+
+.logo img {
+    width: 70px;
+}
+
+.ayuda button {
+    font-size: 18px;
+    padding: 5px 20px;
+    border-radius: 20px;
+    border-color: aqua;
+    background: #7ff7ff;
+    color: #000000;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.iconos img {
+    width: 40px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.iconos img:hover {
+    transform: scale(1.1);
+}
+
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(70deg, #5dd55d, #7ff7ff);
+    padding: 25px;
+    border: 2px solid #000;
+}
+
+.menu a {
+    color: #000000;
+    text-decoration: none;
+    border-radius: 15px;
+    border:2px solid #000;
+    padding: 5px 20px;
+    font-weight: 900;
+    background-color: #d6eaff;
+}
+
+.menu a:hover {
+    transform: scale(1.1);
+}
+
+.menu a.active {
+    background-color: #4caf50;
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.saldo-container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #4caf50;
+}
+
+.saldo-container label {
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.saldo-container input {
+    border: none;
+    background-color: #f4f4f4;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.gastos, .calculo {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    text-align: center;
+    border: 1px solid #4caf50;
+}
+
+.gastos h3,
+.calculo h3 {
+    text-align: center;
+    margin-top: 0;
+    font-size: 24px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.gastos label,
+.calculo-section label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 20px;
+    color: #333;
+}
+
+.gastos input,
+.calculo-section input {
+    width: 50%;
+    border: none;
+    background-color: #6bd18686;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.calculo-section {
+    text-align: center;
+}
+
+.calculo-section span {
+    display: block;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.calculo-section hr {
+    border: none;
+    border-top: 2px solid #ddd;
+    margin: 15px 0;
+}
+
+.calculo-section .resultado {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+  
+
+.calculo-section button {
+    background-color: #4caf50;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.calculo-section button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.calculo-section button:active {
+    background-color: #3e8e41;
+    transform: scale(1);
+}
+
+
+footer {
+    border-top: 2px solid #6bd187;
+    color: #000000; 
+    padding: 5px 0; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    bottom: 0;
+}
+
+.redes {
+    display: flex;
+    gap: 15px; 
+}
+
+.redes a {
+    text-decoration: none;
+}
+
+.redes img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.redes img:hover {
+    transform: scale(1.2); 
+}
+
+.politica {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.politica img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.privacidad {
+    text-align: center;
+}
+
+.privacidad p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.privacidad a {
+    color: #000000; 
+    text-decoration: none;
+}
+
+.privacidad a:hover {
+    text-decoration: underline; 
+}

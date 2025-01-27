@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="registro.css">
+    <link rel="icon" href="../assets/Logo.png" type="image/icon type">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+</head>
+<body>
+    
+    <div id="principal" class="principal">
+        <div id="logoTitulo" class="logoTitulo">
+            <div id="logo" class="logo">
+                <img src="../assets/Logo.png">
+            </div>
+
+            <div id="titulo" class="titulo">
+                <h1>Registro</h1>
+            </div>
+        </div>
+
+        <div id="registro" class="registro">
+            <div id="nombreYcorreo" class="nombreYcorreo">
+                <div class="campo">
+                    <label for="nombre" class="labelNombre">Nombre</label>
+                    <input type="text" id="nombre" class="inputNombre" placeholder="Introduce el nombre" required>
+                </div>
+                <div class="campo">
+                    <label for="correo" class="labelNombre">Correo Electrónico</label>
+                    <input type="email" id="correo" class="inputNombre" placeholder="Introduce el correo" required>
+                </div>
+            </div>
+            <div id="apellidoYnumero" class="apellidoYnumero">
+                <div class="campo">
+                    <label for="apellidos" class="labelNombre">Apellidos</label>
+                    <input type="text" id="apellidos" class="inputNombre" placeholder="Introduce el apellido" required>
+                </div>
+                <div class="campo">
+                    <label for="numero" class="labelNombre">Número Teléfono</label>
+                    <input type="number" id="numero" class="inputNombre" placeholder="Introduce el número" required>
+                </div>
+            </div>
+            <div id="dniYcontraenia" class="dniYcontraenia">
+                <div class="campo">
+                    <label for="dni" class="labelNombre">DNI</label>
+                    <input type="text" id="dni" class="inputNombre" placeholder="Introduce el DNI" required>
+                </div>
+                <div class="campo">
+                    <label for="contraseña" class="labelNombre">Contraseña</label>
+                    <input type="password" id="contraseña" class="inputNombre" placeholder="Introduce la contraseña" required>
+                </div>
+            </div>
+            <div id="fechaYcontrasenia" class="fechaYcontrasenia">
+                <div class="campo">
+                    <label for="fecha" class="labelNombre">Fecha Nacimiento</label>
+                    <input type="date" id="fecha" class="inputNombre" placeholder="Introduce tu fecha de nacimiento" required>
+                </div>
+                <div class="campo">
+                    <label for="confContraseña" class="labelNombre">Confirmar Contraseña</label>
+                    <input type="password" id="confContraseña" class="inputNombre" placeholder="Introduce de nuevo la contraseña" required>
+                </div>
+            </div>
+        </div>        
+
+        <div id="btnEntrar" class="btnEntrar">
+            <button type="submit" id="boton" class="boton"><a href="../Inicio_Sesion/login.html">Entrar</a></button>
+        </div>
+    </div>
+
+</body>
+</html>
