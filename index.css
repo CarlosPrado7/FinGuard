@@ -53,7 +53,7 @@ body {
 }
 
 .navegar a {
-    color: #fff;
+    color: #308230;
     text-decoration: none;
     font-size: 1rem;
 }
@@ -91,7 +91,7 @@ body {
 
 .informacion {
     padding: 4rem 1rem;
-    background-color: #fff;
+    background-color: #308230;
 }
 
 .informacion .tituloInfo {
@@ -108,7 +108,7 @@ body {
 
 .info {
     text-align: center;
-    background: #f1f1f1;
+    background: #308230;
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -116,7 +116,7 @@ body {
 
 .acercaDe {
     padding: 4rem 1rem;
-    background-color: #f9f9f9;
+    background-color: #308230;
 }
 
 .acercaDe .tituloAcercaDe {
@@ -134,7 +134,7 @@ body {
 
 .footer {
     background-color:  #5dd55d;
-    color: #fff;
+    color: #308230;
     text-align: center;
     padding: 1rem 0;
 }
